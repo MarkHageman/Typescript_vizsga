@@ -58,6 +58,10 @@ export class EventOrganizer {
         return Array.from(this.events.values());
     }
 
+    listParticipant(): Participant[]{
+        return Array.from(this.participants.values())
+    }
+
     eventReservation(eventId: number, participantId: number): void {
         const event = this.events.get(eventId);
         const participant = this.participants.get(participantId);

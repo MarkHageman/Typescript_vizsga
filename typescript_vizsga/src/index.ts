@@ -73,6 +73,12 @@ console.log(eventOrganizer.listEvents());
 //esemény foglalása
 eventOrganizer.eventReservation(1, 1)
 console.log(eventOrganizer.listReservations());
+eventOrganizer.cancelReservation(1)
+console.log(eventOrganizer.listReservations());
 
 
+console.log(eventOrganizer.listParticipant());
 
+eventOrganizer.removeParticipant(2)
+
+console.log(eventOrganizer.listParticipant());
